@@ -1,0 +1,88 @@
+/* Firm Section */
+#firm {
+    padding: 40px 40px;
+    color: #fff;
+    text-align: left;              /* keep text left-aligned */
+    background-color: #000;
+}
+
+#firm .section-container {
+    max-width: 900px;
+    margin: 0;                     /* align left like Approach */
+}
+
+#firm h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#firm h2 {
+    font-size: 28px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+#firm h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#firm p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   MOBILE & TABLETS HERO
+   ========================= */
+@media (max-width: 768px) {
+    /* Firm Section */
+    #firm {
+        padding: 20px 40px;
+    }
+
+    #firm h1 {
+        font-size: 25px;
+    }
+
+    #firm h2 {
+        font-size: 20px;
+    }
+
+    #firm h3 {
+        font-size: 20px;
+    }
+
+    #firm p {
+        font-size: 15px;
+    }
+}
+
+/* =========================
+   MOBILE PHONES HERO
+   ========================= */
+@media (max-width: 480px) {
+     /* Firm Section */
+    #firm {
+        padding: 20px 40px;
+    }
+
+    #firm h1 {
+        font-size: 15px;
+    }
+
+    #firm h2 {
+        font-size: 15px;
+    }
+
+    #firm h3 {
+        font-size: 14px;
+    }
+
+    #firm p {
+        font-size: 15px;
+    }
+}

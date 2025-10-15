@@ -1,0 +1,141 @@
+/* Thoughts Section */
+#thoughts {
+    padding: 20px 40px;
+    color: #fff;
+    text-align: left;
+    background-color: #000;
+}
+
+#thoughts .section-container {
+    max-width: 900px;
+    margin: 0; /* align left like Approach section */
+}
+
+#thoughts h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#thoughts h2 {
+    font-size: 28px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+#thoughts h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#thoughts p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Newsletter Section */
+#newsletter {
+    padding: 60px 40px;
+    text-align: left;
+    background-color: #111;
+}
+
+#newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#newsletter p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* =========================
+   MOBILE & TABLETS NAVBAR
+   ========================= */
+@media (max-width: 768px) {
+     #thoughts {
+        padding: 10px 40px;
+        color: #fff;
+    }
+
+    #thoughts h1 {
+        font-size: 30px;
+    }
+
+    #thoughts h2 {
+        font-size: 20px;
+    }
+
+    #thoughts h3 {
+        font-size: 20px;
+    }
+
+    #thoughts p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+    /* Newsletter Section */
+    #newsletter {
+        padding: 10px 40px;
+        background-color: #111;
+    }
+
+    #newsletter h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #newsletter p {
+        font-size: 15px;
+    }
+
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    #thoughts {
+        padding: 10px 40px;
+        color: #fff;
+    }
+
+    #thoughts h1 {
+        font-size: 30px;
+    }
+
+    #thoughts h2 {
+        font-size: 20px;
+    }
+
+    #thoughts h3 {
+        font-size: 20px;
+    }
+
+    #thoughts p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+    /* Newsletter Section */
+    #newsletter {
+        padding: 10px 40px;
+        background-color: #111;
+    }
+
+    #newsletter h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #newsletter p {
+        font-size: 15px;
+    }
+
+}
