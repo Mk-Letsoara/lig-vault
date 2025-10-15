@@ -1,0 +1,185 @@
+html, body { 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Rosart, Georgia, Times New Roman, FZNewBaoSong, serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    flex: 1;  /* takes all available space pushing footer to the bottom */
+}
+
+
+/* Hero Section */
+#hero {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 85vh;                   /* slightly taller for balance */
+    color: #fff;
+    background-color: #000;
+    padding: 80px 0 0 50px;         /* match navbar padding */
+    margin-bottom: 0;               /* remove bottom margin */
+    overflow: hidden;
+}
+
+#hero .hero-content {
+    max-width: 900px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2;                     /* ensure text appears above the image */
+}
+
+#hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+}
+
+#hero h1 span {
+    color: #ccc;
+    letter-spacing: 1.5px;
+}
+
+.hero-subtext {
+    font-size: 26px;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 500px;
+}
+
+/* Vault image on the right */
+.hero-image {
+    position: absolute;           /* position freely */
+    top: -280px;                    /* adjust to move image higher or lower */
+    right: -67vh;                /* slightly off-screen to the right */
+    width: auto;                 /* control the size */
+    height: 180vh;                 /* maintain aspect ratio */
+    opacity: 0.15;                /* subtle background effect */
+    z-index: 1;                   /* behind text */
+    pointer-events: none;         /* image won't interfere with clicks */
+}
+
+/* Subtext styling */
+.hero-subtext {
+    font-size: 20px;               /* slightly larger for readability */
+    line-height: 1.6;
+    color: #ccc;                   /* lighter text for hierarchy */
+    max-width: 500px;
+}
+
+
+/* About */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 40px 50px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.9;               /* more vertical spacing for a tall look */
+    color: #f5f5f5;
+}
+
+#about p {
+    max-width: 1000px;               /* limits width for taller text shape */
+    margin: 0 auto;                 /* centers the paragraph */
+}
+
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   MOBILE & TABLETS HERO
+   ========================= */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        height: auto; /* adjust height for smaller screens */
+    }
+
+    #hero .hero-content {
+
+        text-align: left;
+    }
+
+    #hero h1 {
+        padding: 10px;
+        text-align: center;
+        font-size: 46px;
+        line-height: 1.2;
+    }
+
+    #hero h1 span {
+        color: #ccc;
+    }
+
+    .hero-subtext {
+        text-align: center;
+        font-size: 32px;
+        max-width: 80vw;
+    }
+
+    /* Remove the vault image */
+    .hero-image {
+        display: none;
+    }
+
+     #about{
+        min-height: auto;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+/* =========================
+   MOBILE PHONES HERO
+   ========================= */
+@media (max-width: 480px) {
+    #hero {
+        align-items: center;
+        padding: 20px 15px;
+    }
+
+    #hero h1 {
+        text-align: center;
+        padding: 0 15px;
+        font-size: 35px;
+        max-width: 150%;
+
+    }
+
+    .hero-subtext {
+        text-align: center;
+        padding: 0 20px;
+        font-size: 23px;
+    }
+
+    /* Ensure hero image stays hidden */
+    .hero-image {
+        display: none;
+    }
+
+    #about{
+        min-height: auto;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
