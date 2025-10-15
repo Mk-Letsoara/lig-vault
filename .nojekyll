@@ -1,6 +1,0 @@
-# if your site is in docs/
-cd path/to/repo
-touch docs/.nojekyll
-git add docs/.nojekyll
-git commit -m "Disable Jekyll for Pages (add .nojekyll)"
-git push
